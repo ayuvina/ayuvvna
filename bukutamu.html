@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu Teras Semeru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>TERAS SEMERU</h1>
+    <p>Buku Tamu Pengunjung</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="fasilitas.html">Fasilitas</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="lokasi.html">Lokasi</a>
+    <a href="kontak.html">kontak</a>
+    <a href="ulasan.html">Ulasan</a>
+    <a href="bukutamu.html">Buku Tamu</a>
+</nav>
+
+<main>
+<section class="konten">
+    <h2>Buku Tamu Teras Semeru</h2>
+
+    <p>Silakan isi buku tamu di bawah ini.</p>
+
+    <form id="formTamu">
+        <label>Nama Lengkap</label>
+        <input type="text" id="namaTamu" placeholder="Nama lengkap" required>
+
+        <label>Asal Daerah</label>
+        <input type="text" id="asalTamu" placeholder="Asal daerah" required>
+
+        <label>Tanggal Kunjungan</label>
+        <input type="date" id="tanggalTamu" required>
+
+        <label>Pesan dan Kesan</label>
+        <textarea id="pesanTamu" rows="4"
+        placeholder="Tulis pesan dan kesan" required></textarea>
+
+        <button type="submit">Kirim Buku Tamu</button>
+    </form>
+
+    <h3>Daftar Pengunjung</h3>
+    <div id="daftarTamu"></div>
+</section>
+</main>
+
+<footer><p>© 2026 Teras Semeru</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

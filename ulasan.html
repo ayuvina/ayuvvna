@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulasan Teras Semeru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>TERAS SEMERU</h1>
+    <p>Ulasan Pengunjung</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="fasilitas.html">Fasilitas</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="lokasi.html">Lokasi</a>
+    <a href="kontak.html">kontak</a>
+    <a href="ulasan.html">Ulasan</a>
+    <a href="bukutamu.html">Buku Tamu</a>
+</nav>
+
+<main>
+<section class="konten">
+    <h2>Ulasan Pengunjung</h2>
+
+    <form id="formUlasan">
+        <label>Nama Pengunjung</label>
+        <input type="text" id="namaUlasan" required>
+
+        <label>Rating</label>
+        <select id="rating" required>
+            <option value="">Pilih rating</option>
+            <option value="5">5 Bintang</option>
+            <option value="4">4 Bintang</option>
+            <option value="3">3 Bintang</option>
+            <option value="2">2 Bintang</option>
+            <option value="1">1 Bintang</option>
+        </select>
+
+        <label>Pesan Ulasan</label>
+        <textarea id="pesanUlasan" rows="4" required></textarea>
+
+        <button type="submit">Kirim Ulasan</button>
+    </form>
+
+    <h3>Daftar Ulasan</h3>
+    <div id="daftarUlasan"></div>
+</section>
+</main>
+
+<footer><p>© 2026 Teras Semeru</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

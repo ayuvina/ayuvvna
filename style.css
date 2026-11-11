@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f7f2;
+    color: #303d35;
+}
+
+header {
+    margin: 25px 4%;
+    padding: 45px 15px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(120deg, #285b48, #83aa7e);
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+nav {
+    margin: 20px 4%;
+    padding: 15px;
+    background: #dceade;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background: #285b48;
+    padding: 15px 18px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #83aa7e;
+}
+
+main {
+    max-width: 950px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.konten {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+h2 {
+    color: #285b48;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #285b48;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.foto {
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.kartu {
+    background: #eef6ef;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0 18px;
+    border: 1px solid #c6d7ca;
+    border-radius: 9px;
+    font-size: 16px;
+}
+
+button, .tombol {
+    display: inline-block;
+    background: #285b48;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 9px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .tombol:hover {
+    background: #83aa7e;
+}
+
+.data {
+    background: #eef6ef;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+.hapus {
+    background: #a84444;
+    margin-top: 10px;
+}
+
+footer {
+    background: #285b48;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media(max-width: 600px) {
+    header {
+        padding: 35px 10px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .konten {
+        padding: 23px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+k
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Mengatur susunan galeri */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Mengatur ukuran foto */
+.foto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Tampilan laptop kecil dan HP */
+@media (max-width: 700px) {
+    .galeri {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .galeri {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* GALERI FOTO */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.galeri img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* VIDEO TERAS SEMERU */
+.video-semeru {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+/* KETERANGAN VIDEO */
+.keterangan-video {
+    text-align: center;
+    font-style: italic;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 600px) {
+    .galeri {
+        grid-template-columns: 1fr;
+    }
+
+    .galeri img {
+        height: 200px;
+    }
+}
+
+.foto {
+    width: 100%;
+    max-width: 400px;
+    height: 1000px;;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
